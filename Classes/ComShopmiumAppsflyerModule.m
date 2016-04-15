@@ -115,7 +115,15 @@
 {
 	NSString *eventName  = [args objectAtIndex:0];
 	NSString *eventValue = [args objectAtIndex:1];
-	[[AppsFlyerTracker sharedTracker] trackEvent:eventName withValue:eventValue];
+	[[AppsFlyerTracker sharedTracker] trackEvent:eventName withValues: @{eventName: eventValue} ];
+}
+
+-(NSString*)getAppsFlyerUID:(id)args
+{
+	NSLog(@"[DEBUG AppsFlyer > getAppsFlyerUID: start");
+	NSString* UID = [[AppsFlyerTracker sharedTracker] getAppsFlyerUID];
+	NSLog(@"[DEBUG AppsFlyer > getAppsFlyerUID: end");
+	return UID;
 }
 
 @end

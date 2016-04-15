@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 45;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -82,7 +82,7 @@
 		0867D691FE84028FC02AAC07 /* iphone */ = {
 			isa = PBXGroup;
 			children = (
-				346011121ADC050F00B245E7 /* AF-iOS-SDK-v2.5.3.14.1 */,
+				346011121ADC050F00B245E7 /* AF-iOS-SDK-v4.4.1 */,
 				08FB77AEFE84172EC02AAC07 /* Classes */,
 				32C88DFF0371C24200C91783 /* Other Sources */,
 				0867D69AFE84028FC02AAC07 /* Frameworks */,
@@ -120,13 +120,13 @@
 			name = "Other Sources";
 			sourceTree = "<group>";
 		};
-		346011121ADC050F00B245E7 /* AF-iOS-SDK-v2.5.3.14.1 */ = {
+		346011121ADC050F00B245E7 /* AF-iOS-SDK-v4.4.1 */ = {
 			isa = PBXGroup;
 			children = (
 				346011131ADC050F00B245E7 /* AppsFlyerTracker.h */,
 				346011141ADC050F00B245E7 /* libAppsFlyerLib.a */,
 			);
-			path = "AF-iOS-SDK-v2.5.3.14.1";
+			path = "AF-iOS-SDK-v4.4.1";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,9 +169,10 @@
 		0867D690FE84028FC02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 0710;
 			};
 			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "iphone" */;
-			compatibilityVersion = "Xcode 3.1";
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
@@ -251,7 +252,7 @@
 				GCC_WARN_UNUSED_VALUE = NO;
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				INSTALL_PATH = /usr/local/lib;
-				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/AF-iOS-SDK-v2.5.3.14.1";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/AF-iOS-SDK-v4.4.1";
 				OTHER_CFLAGS = (
 					"-DDEBUG",
 					"-DTI_POST_1_2",
@@ -289,7 +290,7 @@
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				INSTALL_PATH = /usr/local/lib;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/AF-iOS-SDK-v2.5.3.14.1";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/AF-iOS-SDK-v4.4.1";
 				OTHER_CFLAGS = "-DTI_POST_1_2";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = ComShopmiumAppsflyer;
@@ -306,6 +307,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DSTROOT = /tmp/ComShopmiumAppsflyer.dst;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -322,6 +324,7 @@
 				GCC_WARN_UNUSED_VALUE = NO;
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				INSTALL_PATH = /usr/local/lib;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = (
 					"-DDEBUG",
 					"-DTI_POST_1_2",
